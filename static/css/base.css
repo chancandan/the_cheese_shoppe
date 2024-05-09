@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/home_background.jpg') no-repeat center center fixed;
+    background: url('/media/homepage_image_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -71,6 +71,15 @@ body {
 
 .bg-black {
     background: #000 !important;
+}
+
+/* Homepage banner text*/
+.font-weight-heavy {
+    font-weight: 900;
+}
+
+.text-bottom-margin {
+    margin-top: 150px; /* Adjust this value as needed */
 }
 
 .overlay {
