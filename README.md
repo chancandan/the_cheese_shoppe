@@ -1,39 +1,128 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<div align="center">
+  <img src="media/rewadme_welcome_header.png" style="background-color: black" alt="Welcome Image">
+</div>
+<div align="center">
+  <img src="media/am_i_responsive_img_the_cheese_shoppe.png" alt="Home Page">
+</div>
 
-Welcome,
+[The Cheese Shoppe](https://the-cheese-shoppe.herokuapp.com/) is an online store specialising in a wide variety of cheeses, cured meats, and gourmet products. Designed as a comprehensive e-commerce platform, it seamlessly integrates Stripe for secure and effortless payment processing. The website features a cohesive and captivating theme, showcasing meticulous attention to detail and highlighting the extensive skills developed throughout the project.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
+1. <details open>
+    <summary><a href="#ux">UX</a></summary>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+    <ul>
+    <li><details>
+    <summary><a href="#goals">Goals</a></summary>
 
-## Codeanywhere Reminders
+    - [Visitor Goals](#visitor-goals)
+    - [Business Goals](#business-goals)
+    - [User Stories](#user-stories)
+    </details></li>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+    <li><details>
+    <summary><a href="#visual-design">Visual Design</a></summary>
 
-`python3 -m http.server`
+    - [Wireframes](#wireframes)
+    - [Fonts](#fonts)
+    - [Icons](#icons)
+    - [Colors](#colors)
+    - [Images](#images)
+    </details></li>
+    </ul>
+</details>
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+2. <details open>
+    <summary><a href="#features">Features</a></summary>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+    <ul>
+    <li><details>
+    <summary><a href="#page-elements">Page Elements</a></summary>
 
-`http_server`
+    - [All Pages](#all-pages)
+    - [Home Page](#home-page)
+    - [Product Page](#product-page)
+    - [Cheese Page](#hampers-page)
+    - [Cured Meat Page](#gifts-page)
+    - [Special Offers Page](#special-offers-page)
+    </details></li>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    <li><details>
+    <summary><a href="#additional-features">Additional Features</a></summary>
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+    - [Image Loading Blur](#image-loading-blur)
+    - [Email](#email)
+    </details></li>
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    <li><details>
+    <summary><a href="#future-ideas">Future Ideas</a></summary>
 
-To log into the Heroku toolbelt CLI:
+    - [Basic](#basic)
+    - [Content](#content)
+    </details></li>
+    </ul>
+</details>
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+3. <details open>
+    <summary><a href="#technologies-used">Technologies Used</a></summary>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    - [Languages](#languages)
+    - [Frameworks](#frameworks)
+    - [Libraries](#libraries)
+    - [APIs](#apis)
+    - [Platforms](#platforms)
+    - [Other Tools](#other-tools)
+</details>
 
----
+4. <details open>
+    <summary><a href="#testing">Testing</a></summary>
 
-Happy coding!
+    <ul>
+    <li><details>
+    <summary><a href="#methods">Methods</a></summary>
+
+    - [Validation](#validation)
+    - [General Testing](#general-testing)
+    - [Mobile Testing](#mobile-testing)
+    - [Desktop Testing](#desktop-testing)
+    </details></li>
+
+    <li><details>
+    <summary><a href="#bugs">Bugs</a></summary>
+
+    - [Known Bugs](#known-bugs)
+    - [Fixed Bugs](#fixed-bugs)
+    </details></li>
+    </ul>
+</details>
+
+5. <details open>
+    <summary><a href="#deployment">Deployment</a></summary>
+
+    <ul>
+    <li><details>
+    <summary><a href="#local-deployment">Local Deployment</a></summary>
+
+    - [Local Preparation](#local-preparation)
+    - [Local Instructions](#local-instructions)
+    </details></li>
+
+    <li><details>
+    <summary><a href="#github-deployment">Github Deployment</a></summary>
+
+    - [Github Preparation](#github-preparation)
+    - [Github Instructions](#github-instructions)
+    </details></li>
+    </ul>
+</details>
+
+6. <details open>
+    <summary><a href="#credit-and-contact">Credit and Contact</a></summary>
+
+    - [Content](#content)
+    - [Contact](#contact)
+</details>
+
+----
+
+# UX
