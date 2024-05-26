@@ -48,13 +48,22 @@
   </head>
 
   <body>
+    <!-- Header Section -->
     <header class="container-fluid fixed-top">
+        <!-- Delivery Banner -->
+        <div id="delivery-banner" class="row text-center">
+            <div class="col bg-black text-white">
+                <h4 class="logo-font my-1">Shipping free if you spend over ${{ free_delivery_threshold }}!</h4>                
+            </div>            
+        </div>
+         <!-- Top Navigation -->
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0">The <strong>Cheese</strong> Shoppe</h2>
                 </a>
             </div>
+            <!-- Search Form -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
@@ -69,15 +78,19 @@
                     </div>
                 </form>
             </div>
+            <!-- Shopping Bag and User's Account-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <!-- User Account Dropdown -->
                     <li class="list-inline-item dropdown">
+                        <!-- Link for User Account -->
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
+                        <!-- Dropdown Menu for User Account -->
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
@@ -91,6 +104,7 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!-- Link for Shopping Bag -->
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
@@ -108,23 +122,28 @@
                 </ul>
             </div>
         </div>
+        <!-- Navigation for Mobile -->
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Mobile Top Header -->
                 {% include 'includes/mobile-top-header.html' %}
+                <!-- Main Navigation -->
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-        <div id="delivery-banner" class="row text-center">
+        <!-- OLD      Delivery Banner -->
+        <!--<div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
                 <h4 class="logo-font my-1">Shipping free if you spend over ${{ free_delivery_threshold }}!</h4>                
             </div>            
-        </div>
+        </div>-->
     </header>
 
     {% if messages %}
+        <!-- Message Container -->
         <div class="message-container">
             {% for message in messages %}
                 {% with message.level as level %}
@@ -147,6 +166,70 @@
 
     {% block content %}
     {% endblock %}
+
+    <!-- Newsletter Section -->
+    <div class="newsletter-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="subscribe-newsletter align-items-center text-info">
+                        <h2 class="m-4">Sign Up For Our Cheese Shoppe Newsletter </h2>
+                        <p>Receive the latest specials on our <strong>Cheese</strong> Shoppe
+                            <strong>Selections</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Mailchimp -->
+                    <div class="text-center">
+                        <div id="mc_embed_shell">
+                            <div id="mc_embed_signup">
+                                <form
+                                    action="https://herokuapp.us13.list-manage.com/subscribe/post?u=c9aeabf5a17530fcace097cef&amp;id=48cb5ae5f8&amp;f_id=000a33e5f0"
+                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                    class="validate" target="_blank">
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="mc-field-group">
+                                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                            <input type="email" name="EMAIL" class="required email form-control"
+                                                id="mce-EMAIL" required="" value="">
+                                            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                                        </div>
+                                        <div id="mce-responses" class="clear foot">
+                                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                                            <div class="response" id="mce-success-response" style="display: none;">
+                                            </div>
+                                        </div>
+                                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                            <input type="text" name="b_c9aeabf5a17530fcace097cef_48cb5ae5f8"
+                                                tabindex="-1" value="">
+                                        </div>
+                                        <div class="optionalParent">
+                                            <div class="clear-foot">
+                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                                    class="button btn btn-primary" value="Subscribe">
+                                                <p style="margin: 0px auto;"><a href="http://eepurl.com/iI3yzE"
+                                                        title="Mailchimp - email marketing made easy and fun"><span
+                                                            style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
+                                                                class="refferal_badge"
+                                                                src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                                                                alt="Intuit Mailchimp"
+                                                                style="height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Mailchimp -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
 
     {% block postloadjs %}
     <script type="text/javascript">
