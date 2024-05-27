@@ -162,5 +162,32 @@
 
 {% block postloadjs %}
 {{ block.super }}
+
+<script>
+    // Function to add/remove a product from the wishlist via AJAX
+    function func_make_wishlist(product_id) {
+        $.ajax({
+            url: '/products/make_wishlist/',
+            type: 'POST',
+            data: {
+                product_id: product_id
+            }
+        })
+        .done(function (response) {
+            // Update button style and status message based on response
+            if (response === 'True') {
+                document.getElementById('wishlist_button_id').classList.add('btn-light');
+                document.getElementById('wishlist_button_id').classList.remove('btn-secondary');
+                document.getElementById('id_status_wishlist').innerHTML = "Added to wishlist";
+            } else {
+                document.getElementById('wishlist_button_id').classList.remove('btn-light');
+                document.getElementById('wishlist_button_id').classList.add('btn-secondary');
+                document.getElementById('id_status_wishlist').innerHTML = "Removed from wishlist";
+            }
+        });
+    }
+</script>
+
+
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
