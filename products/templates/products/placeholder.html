@@ -1,0 +1,13 @@
+if request.method == 'POST':
+    rating = request.POST.get('rating', 3)
+    content = request.POST.get('content', '')
+
+    if content:
+    review = Review.objects.create(
+        product=product,
+        rating=rating,
+        content=content,
+        created_by=<request class="user"></request>
+    )
+
+    return redirect('product', slug=slug)
