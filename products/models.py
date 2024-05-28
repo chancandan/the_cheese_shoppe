@@ -46,7 +46,7 @@ class Product(models.Model):
         return 0
 
 
-''' START HERE '''
+# Reviews Model
 
 class Review(models.Model):
     product = models.ForeignKey(Product, related_name='reviews', on_delete=models.CASCADE)
