@@ -257,14 +257,14 @@
 
                         <div class="footer-cheese-img rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
                         style="width: 150px; height: 150px;">
-                        <img src="{{MEDIA_URL}}cheese_footer_logo_100pxx100px.png" height="90" alt="footer-logo"
-                            loading="lazy">
+                        <img src="{{MEDIA_URL}}cheese_footer_logo.jpg" height="90" alt="footer-logo"
+                            loading="lazy" style="height: 150px; width: 150px; border-radius: 50%; object-fit: cover;">
                     </div>
 
                     <p class="text-center">Follow us on social media to see new <strong>Cheese Shoppe</strong>ranges added.
                     </p>
 
-                    <ul class="listed-unstyled d-flex flex-row justify-content-center">
+                    <ul class="listed-unstyled d-flex flex-row justify-content-center" style="list-style-type: none; display: flex; justify-content: center; padding: 0;">
                         <li>
                             <a class="text-white px-2" href="https://www.facebook.com/" rel="noopener">
                                 <i class="fab fa-facebook-square"></i>
@@ -286,26 +286,26 @@
                  
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4">Make Your Own Cheese Selections</h5>
+                    <h5 class="text-uppercase mb-4">LEARN MORE ABOUT CHEESE</h5>
 
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="https://www.cheese.com"
-                                class="text-white"><i class="fa-solid fa-gift pr-2"></i> Cheese
+                            <a href="https://www.verywellfit.com/cheddar-cheese-nutrition-facts-and-health-benefits-4797454"
+                                class="text-white">Cheddar
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="https://www.cheese.com"
-                                class="text-white"><i class="fa-solid fa-gift pr-2"></i>Cheese</a>
+                            <a href="https://www.verywellfit.com/gouda-cheese-nutrition-facts-and-health-benefits-5202613"
+                                class="text-white">Gouda</a>
                         </li>
                         <li class="mb-2">
-                            <a href="https://www.cheese.com"
-                                class="text-white"><i class="fa-solid fa-gift pr-2"></i>Cheese
+                            <a href="https://www.healthline.com/nutrition/is-swiss-cheese-healthy#basics"
+                                class="text-white">Swiss
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="https://www.cheese.com"
-                                class="text-white"><i class="fa-solid fa-gift pr-2"></i>Cheese
+                            <a href="https://www.healthline.com/nutrition/healthiest-cheese"
+                                class="text-white">Other
                             </a>
                         </li>
                     </ul>
@@ -318,23 +318,23 @@
 
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="https://cheesestuff.com"
-                                class="text-white"><i class="fa-solid fa-wine-glass-empty pr-2"></i>More Cheese Stuff
+                            <a href="{% url 'products' %}?category=red_cheese,mature_cheddar,gouda,swiss,"
+                                class="text-white">More Cheese Stuff
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="https://thecheeseshoppe.com"
-                                class="text-white"><i class="fa-solid fa-utensils pr-2"></i>The Cheese Shoppe
+                            <a href="https://8000-chancandan-thecheesesho-8hdodlg6is9.ws-eu114.gitpod.io/"
+                                class="text-white">The Cheese Shoppe
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="https://curedmeats.com"
-                                class="text-white"><i class="fa-solid fa-wine-glass pr-2"></i>Cured Meats
+                            <a href="{% url 'products' %}?category=prosciutto"
+                                class="text-white">Prosciutto 
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="https://cheeseboards.com"
-                                class="text-white"><i class="fa-solid fa-spa pr-2"></i>Cheese Boards</a>
+                            <a href="{% url 'products' %}?category=bresaola"
+                                class="text-white">Bresaola</a>
                         </li>
                     </ul>
                 </div>
