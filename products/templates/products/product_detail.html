@@ -110,6 +110,8 @@
                             {% endwith %}
                         </div>
                     </form>
+
+                    
                     <br />
                     <div class="w-full mt-6">
                         <h2 class="text-l">Customer Reviews</h2>
@@ -138,12 +140,13 @@
                                 <button class="btn btn-black rounded-0 text-uppercase float-left">Submit</button>
                             </div>
                         </form>
+                        <br />
                         {% endif %}
 
-
+                        <br />
                         <br />
                         {% for review in product.reviews.all %}    
-                            <div class="px-4 py-6 bg-white rounded-xl mb-4">
+                        <div class="product-details-container mb-5 mt-md-5">
                                 <strong>Rating: </strong> {{ review.rating }}/5<br>
                                 <strong>Date: </strong> {{ review.created_at|date:"d-m-Y" }}<br>
                                 <strong>Comment: </strong>
