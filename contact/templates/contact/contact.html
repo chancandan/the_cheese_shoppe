@@ -1,10 +1,55 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block content %}
-  <h2>Contact Us</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Send</button>
-  </form>
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4">Contact Us</h2>
+            <hr>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.full_name.label_tag }}
+                        <input type="text" name="{{ form.full_name.name }}" class="form-control" id="{{ form.full_name.id_for_label }}" value="{{ form.full_name.value|default_if_none:'' }}" required>
+                    </div>
+                    <div class="form-group">
+                        {{ form.email.label_tag }}
+                        <input type="email" name="{{ form.email.name }}" class="form-control" id="{{ form.email.id_for_label }}" value="{{ form.email.value|default_if_none:'' }}" required>
+                    </div>
+                    <div class="form-group">
+                        {{ form.subject.label_tag }}
+                        <input type="text" name="{{ form.subject.name }}" class="form-control" id="{{ form.subject.id_for_label }}" value="{{ form.subject.value|default_if_none:'' }}" required>
+                    </div>
+                    <div class="form-group">
+                        {{ form.message.label_tag }}
+                        <textarea name="{{ form.message.name }}" class="form-control" id="{{ form.message.id_for_label }}" required>{{ form.message.value|default_if_none:'' }}</textarea>
+                    </div>
+                    <button class="btn btn-black rounded-0 text-uppercase float-left">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+
+    <script src="{% static 'js/wishlist.js' %}"></script>
+
+    {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
