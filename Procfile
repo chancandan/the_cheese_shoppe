@@ -1,0 +1,1 @@
+web: gunicorn the_cheese_shoppe.wsgi:application

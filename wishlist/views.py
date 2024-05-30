@@ -3,7 +3,7 @@ from django.contrib import messages
 
 from products.models import Product
 
-'''def view_wishlist(request):
+def view_wishlist(request):
     """ A view that renders the wishlist contents page """
 
     wishlist = request.session.get('wishlist', {})
@@ -90,101 +90,112 @@ def remove_from_wishlist(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
-        '''
-
-
+        
+'''wednesday evening atttempt 
 def view_wishlist(request):
-    """ A view that renders the bag contents page """
+    """ A view that renders the wishlist contents page """
+    return render(request, 'wishlist/wishlist.html')
 
-    return render(request, 'bag/bag.html')
-
-def add_to_bag(request, item_id):
-    """ Add a quantity of the specified product to the shopping bag """
-
+def add_to_wishlist(request, item_id):
+    """ Add a quantity of the specified product to the shopping wishlist """
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url')
-    size = None
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
-    bag = request.session.get('bag', {})
+    quantity_str = request.POST.get('quantity')
+    if quantity_str is not None:
+        quantity = int(quantity_str)
+    else:
+        quantity = 1  # Default quantity if not provided
+    redirect_url = request.POST.get('redirect_url', reverse('view_wishlist'))
+    size = request.POST.get('product_size')
+    wishlist = request.session.get('wishlist', {})
 
     if size:
-        if item_id in list(bag.keys()):
-            if size in bag[item_id]['items_by_size'].keys():
-                bag[item_id]['items_by_size'][size] += quantity
-                messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {bag[item_id]["items_by_size"][size]}')
+        if item_id in wishlist:
+            if size in wishlist[item_id].get('items_by_size', {}):
+                wishlist[item_id]['items_by_size'][size] += quantity
+                messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {wishlist[item_id]["items_by_size"][size]}')
             else:
-                bag[item_id]['items_by_size'][size] = quantity
-                messages.success(request, f'Added size {size.upper()} {product.name} to your bag')
+                wishlist[item_id].setdefault('items_by_size', {})[size] = quantity
+                messages.success(request, f'Added size {size.upper()} {product.name} to your wishlist')
         else:
-            bag[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(request, f'Added size {size.upper()} {product.name} to your bag')
+            wishlist[item_id] = {'items_by_size': {size: quantity}}
+            messages.success(request, f'Added size {size.upper()} {product.name} to your wishlist')
     else:
-        if item_id in list(bag.keys()):
-            bag[item_id] += quantity
-            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+        if item_id in wishlist:
+            wishlist[item_id] += quantity
+            messages.success(request, f'Updated {product.name} quantity to {wishlist[item_id]}')
         else:
-            bag[item_id] = quantity
-            messages.success(request, f'Added {product.name} to your bag')
+            wishlist[item_id] = quantity
+            messages.success(request, f'Added {product.name} to your wishlist')
 
-    request.session['bag'] = bag
+    request.session['wishlist'] = wishlist
     return redirect(redirect_url)
-    
 
-def adjust_bag(request, item_id):
+def adjust_wishlist(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
-
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
-    size = None
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
-    bag = request.session.get('bag', {})
+    quantity_str = request.POST.get('quantity')
+    if quantity_str is not None:
+        quantity = int(quantity_str)
+    else:
+        quantity = 0  # Default quantity if not provided
+    size = request.POST.get('product_size')
+    wishlist = request.session.get('wishlist', {})
 
     if size:
+        # Ensure the item has a dictionary structure for sizes
+        if isinstance(wishlist.get(item_id), int):
+            # If the item is stored as an int, convert it to a size dictionary
+            wishlist[item_id] = {'items_by_size': {}}
+        if 'items_by_size' not in wishlist[item_id]:
+            wishlist[item_id]['items_by_size'] = {}
+
         if quantity > 0:
-            bag[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {bag[item_id]["items_by_size"][size]}')
+            wishlist[item_id]['items_by_size'][size] = quantity
+            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {quantity}')
         else:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
-                bag.pop(item_id)
-            messages.success(request, f'Removed size {size.upper()} {product.name} from your bag')
+            del wishlist[item_id]['items_by_size'][size]
+            if not wishlist[item_id]['items_by_size']:
+                wishlist.pop(item_id)
+            messages.success(request, f'Removed size {size.upper()} {product.name} from your wishlist')
     else:
+        # Ensure the item does not have a size dictionary
+        if isinstance(wishlist.get(item_id), dict) and 'items_by_size' in wishlist[item_id]:
+            # If the item is stored with sizes, sum all sizes into a single quantity
+            total_quantity = sum(wishlist[item_id]['items_by_size'].values())
+            wishlist[item_id] = total_quantity
+
         if quantity > 0:
-            bag[item_id] = quantity
-            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+            wishlist[item_id] = quantity
+            messages.success(request, f'Updated {product.name} quantity to {quantity}')
         else:
-            bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your bag')
+            wishlist.pop(item_id)
+            messages.success(request, f'Removed {product.name} from your wishlist')
 
-    request.session['bag'] = bag
-    return redirect(reverse('view_bag'))
+    request.session['wishlist'] = wishlist
+    return redirect(reverse('view_wishlist'))
 
-
-def remove_from_bag(request, item_id):
-    """Remove the item from the shopping bag"""
-
+def remove_from_wishlist(request, item_id):
+    """Remove the item from the wishlist"""
     try:
         product = get_object_or_404(Product, pk=item_id)
-        size = None
-        if 'product_size' in request.POST:
-            size = request.POST['product_size']
-        bag = request.session.get('bag', {})
+        size = request.POST.get('product_size')
+        wishlist = request.session.get('wishlist', {})
 
         if size:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
-                bag.pop(item_id)
-            messages.success(request, f'Removed size {size.upper()} {product.name} from your bag')
+            if item_id in wishlist and 'items_by_size' in wishlist[item_id]:
+                if size in wishlist[item_id]['items_by_size']:
+                    del wishlist[item_id]['items_by_size'][size]
+                    if not wishlist[item_id]['items_by_size']:
+                        del wishlist[item_id]
+                    messages.success(request, f'Removed size {size.upper()} {product.name} from your wishlist')
         else:
-            bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your bag')
+            if item_id in wishlist:
+                del wishlist[item_id]
+                messages.success(request, f'Removed {product.name} from your wishlist')
 
-        request.session['bag'] = bag
+        request.session['wishlist'] = wishlist
         return HttpResponse(status=200)
 
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
-        return HttpResponse(status=500)
+        return HttpResponse(status=500)'''
