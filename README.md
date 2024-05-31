@@ -351,8 +351,8 @@ I used coolors.co to help created my colour pallette for the The Cheese Shoppe
 
 
 #### Product Page
-#### Hampers Page
-#### Gifts Page
+#### Cheese
+#### Cured Meat
 #### Special Offers Page
 <div align="center">
   <img src="media/readme_products.png" alt="Products">
