@@ -404,7 +404,7 @@ I used coolors.co to help created my colour pallette for the The Cheese Shoppe
 
 ### My Profile
 <div align="center">
-  <img src="assets/READMEimages/My_Profile.png" alt="My Profile">
+  <img src="assets/READMEimages/profile.png" alt="My Profile">
 </div>
 
 ### Email Subscription
@@ -438,15 +438,25 @@ User data is securely managed within a relational database. The core framework h
 ---
 
 
+### Agile Methodology
 
+#### User Stories Issues
 
+The structure of the user story issue consists of the user story, acceptance criteria, and tasks that outline the steps that are required for this issue to be completed.
 
+![User Story](assets/READMEimages/user_stories.png)
 
+#### MoSCoW prioritization
 
+This prioritization technique was used to prioritize the features and requirements of the project based on their importance. The acronym "MoSCoW" stands for "Must have, Should have, Could have, and Won't have." Each category helps to prioritize features to guide the development process and ensure that the most essential elements are targeted first.
 
+![MoSCoW](assets/READMEimages/moscow.png)
 
+#### Github Project
 
+The project was created using a basic Kanban Board structure, divided into columns Todo, In Progress and Done.. This setup provides a clear and organized way to track the status of tasks and visualize and manage the workflow.
 
+![Issues Flow](assets/READMEimages/issues_flow.png)
 
 
 
@@ -454,8 +464,6 @@ User data is securely managed within a relational database. The core framework h
 
 ## Additional Features
 
-
-
 ### Email
 - Mailchimp is functional on every page through the newsletter form.
 
@@ -463,25 +471,7 @@ User data is securely managed within a relational database. The core framework h
 ## Future Ideas
 ### Basic
 - Another section above the newsletter such as testimonials.
-- An upgrade on the database, some styling added
-
-
-### Content 
-- A wider range of products and images.
-- Blog posts on the website for making your own hampers.
-
-----
-
-
-
-### Email
-- Mailchimp is functional on every page through the newsletter form.
-
-
-## Future Ideas
-### Basic
-- Another section above the newsletter such as testimonials.
-- An upgrade on the database, some styling added
+- An upgrade on the database, some styling added.
 
 
 ### Content 
@@ -530,55 +520,8 @@ User data is securely managed within a relational database. The core framework h
 ----
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Testing
 Testing documentation can be found [here.](TESTING.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Search Engine Optimization SEO and Marketing
