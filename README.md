@@ -385,53 +385,39 @@ I used coolors.co to help created my colour pallette for the The Cheese Shoppe
 
 ### Product Management Page
 <div align="center">
-  <img src="media/readme_product_manage.png" alt="Product Management">
+  <img src="assets/READMEimages/product_management_page.JPG" alt="Product Management Page">
 </div>
 
 ### Shopping Bag Page
 <div align="center">
-  <img src="./assets/testing/userstories/shopping_bag_readme.png" alt="Shopping Bag">
+  <img src="assets/READMEimages/ShoppingBag.png" alt="Shopping Bag">
 </div>
 
 ### Checkout Page
 <div align="center">
-  <img src="/assets/testing/userstories/checkout_readme.png" alt="Checkout">
+  <img src="assets/READMEimages/Check_Out_1.png" alt="Checkout 1">
+</div><br>
+
+<div align="center">
+  <img src="assets/READMEimages/Check_Out_2.png" alt="Checkout 2">
 </div>
 
-### Checkout Success
+### My Profile
 <div align="center">
-  <img src="./assets/testing/userstories/checkout_success_readme.png" alt="Checkout Success">
+  <img src="assets/READMEimages/My_Profile.png" alt="My Profile">
+</div>
+
+### Email Subscription
+<div align="center">
+  <img src="assets/READMEimages/Subscription.png" alt="Email Subscription">
+</div>
+
+### Wishlist
+<div align="center">
+  <img src="assets/READMEimages/Wishlist.png" alt="Wishlist">
 </div>
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Models
