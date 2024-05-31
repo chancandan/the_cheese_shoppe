@@ -402,11 +402,6 @@ I used coolors.co to help created my colour pallette for the The Cheese Shoppe
   <img src="assets/READMEimages/Check_Out_2.png" alt="Checkout 2">
 </div>
 
-### My Profile
-<div align="center">
-  <img src="assets/READMEimages/profile.png" alt="My Profile">
-</div>
-
 ### Email Subscription
 <div align="center">
   <img src="assets/READMEimages/Subscription.png" alt="Email Subscription">
