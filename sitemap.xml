@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/wishlist/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/accounts/login/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/bag/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=red_cheddar,mature_cheddar</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=gouda</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=swiss</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=red_cheese,mature_cheddar,gouda,swiss,</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=prosciutto</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=bresaola</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=prosciutto,bresaola,</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=new_arrivals</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=deals</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=clearance</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=new_arrivals,deals,clearance</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/contact/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/17/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=mature_cheddar</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/12/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/?category=red_cheddar</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/175/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/76/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/176/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/1/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/14/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/35/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/155/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/56/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/34/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/16/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/183/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/182/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/68/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/177/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/44/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/180/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/179/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/178/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-cheese-shoppe-bcc078838d50.herokuapp.com/products/181/</loc>
+  <lastmod>2024-05-31T01:10:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
