@@ -302,24 +302,6 @@ I used coolors.co to help created my colour pallette for the The Cheese Shoppe
 - Logged-in users see their account logo and shopping bag balance to the right for quick access to personal and shopping information
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Toasts
 <br>
 <div align="center">
@@ -347,14 +329,14 @@ I used coolors.co to help created my colour pallette for the The Cheese Shoppe
 ### Home Page
 
 <div align="center">
-  <img src="media/readme_home_page.png" alt="Medium Footer">
+  <img src="assets/READMEimages.png" alt="Home Page">
 </div>
 
 - This is the home page, where every detail is crafted with my experience in mind. 
 - As soon as you land on the  website, you're greeted with a captivating background image carefully selected to engage users senses and set the tone for their journey. 
-- The streamlined navbar ensures effortless navigation, allowing users to explore hampers with ease.
--  At the heart of the page, the prominent heading stands proudly next to the wexford treasure hamper logo, inviting users to discover the essence of the brand. 
-- For users ready to embark on their shopping adventure, a centrally located "Shop Now" button beckons, ready to whisk them away to explore the exquisite range of products.
+- The streamlined navbar ensures effortless navigation, allowing users to explore the site's products with ease.
+-  At the heart of the page, the prominent heading stands proudly next to the Cheese Shoppe text logo, inviting users to discover the essence of the brand. 
+- For users ready to embark on their shopping adventure, a centrally located "Explore Our Ranges" button calls users, ready let them explore the exquisite range of products.
 
 
 ### Sign Up Page
