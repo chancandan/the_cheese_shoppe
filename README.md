@@ -179,63 +179,65 @@ User Stories for The Cheese Shoppe:
 #### Index Wireframe
 <div align="center">
   <img src="assets/READMEimages/index_wireframe.JPG" alt="Index Wireframe">
-</div>
+</div><br><br>
 
 #### Products Wireframe
 <div align="center">
   <img src="assets/READMEimages/products_wireframe.JPG" alt="Products  Wireframe">
-</div>
+</div><br><br>
 
 #### Register Wireframe
 <div align="center">
   <img src="assets/READMEimages/register_wireframe.JPG" alt="Register  Wireframe">
-</div>
+</div><br><br>
 
 #### Login Wireframe
 <div align="center">
   <img src="assets/READMEimages/login_wireframe.JPG" alt="Login  Wireframe">
-</div>
+</div><br><br>
 
 #### Wishlist Wireframe
 <div align="center">
   <img src="assets/READMEimages/wishlist_wireframe.JPG" alt="Wishlist  Wireframe">
-</div>
+</div><br><br>
 
 #### Contact Us Wireframe
 <div align="center">
   <img src="assets/READMEimages/contact_us_wireframe.JPG" alt="Contact Us  Wireframe">
-</div>
+</div><br><br>
 
 #### My Account Wireframe
 <div align="center">
   <img src="assets/READMEimages/my_account_wireframe.JPG" alt="My Account  Wireframe">
-</div>
+</div><br><br>
 
 #### Shopping Bag Wireframe
 <div align="center">
   <img src="assets/READMEimages/shopping_bag_wireframe.JPG" alt="Shopping Bag  Wireframe">
-</div>
+</div><br><br>
 
 #### Checkout Wireframe
 <div align="center">
   <img src="assets/READMEimages/checkout_wireframe.JPG" alt="Shopping Bag  Wireframe">
-</div>
+</div><br><br>
 
 
 
-Wireframes: (https://github.com/chancandan/Wireframes)
 
 ### Fonts
+<br>
 <div align="center">
   <img src="assets/READMEimages/fonts.JPG" alt="Fonts">
-</div>
+</div><br>
 
 - The primary font Lato was chosen because of its modern and clean aesthetic, which aligns perfectly with the sophisticated yet approachable brand image of The Cheese Shoppe. Lato, designed by Łukasz Dziedzic, offers excellent readability with its semi-rounded details and strong structure, making it versatile for both digital and print use. Its neutrality and elegance ensure that the focus remains on the content, whether it's product descriptions, blog posts, or user interfaces. Furthermore, Lato's wide range of weights allows for flexible design applications, from bold headlines to subtle body text, enhancing the overall user experience on the site. This choice reflects our commitment to providing a seamless and enjoyable browsing experience for our customers, reinforcing the quality and professionalism of The Cheese Shoppe brand.
 
 ### Icons
+<br>
 <div align="center">
   <img src="assets/READMEimages/icons.JPG" alt="Icons">
-</div>
+</div><br>
+<br>
 
 Icons sourced from the Font Awesome Icon library are implemented as classes within the <i> tag.
 - Because these icons are utilised as classes, they can be effortlessly styled using other classes or IDs within the same tag. 
@@ -243,10 +245,11 @@ Icons sourced from the Font Awesome Icon library are implemented as classes with
  
 
 ### Colors
+<br>
 <div align="center">
   <img src="assets/READMEimages/colour_scheme.JPG" alt="Color Pallette">
-</div>
-
+</div><br>
+<br>
 - While it might look at first glance like little effort was put into the colour palette choices, it was quite the opposite. I wanted a clean, modern, and elegant look for the site and to let the colour yellow in every cheese stand out on the site, so I felt choosing this colour palette would achieve this. The yellow colour in the palette image above was in anticipation of the yellow from the cheese images being prominent on the site.
 
 The colours #222222, #FFFFFF, #000000, and #212529 were carefully chosen to create a harmonious and sophisticated visual experience:
@@ -265,19 +268,38 @@ I used coolors.co to help created my colour pallette for the The Cheese Shoppe
 
 
 ### Images
+<br>
 <div align="center">
-  <img src="media/readme_images(1).png" alt="Images">
-</div>
+  <img src="assets/READMEimages/cheese_collage.png" alt="Images">
+</div><br>
 
-- The website prominently features high-resolution images of hampers to showcase their quality and presentation, enticing visitors with visual appeal.
-- Utilizing a script during image loading ensures seamless user experience by initially displaying blurred thumbnails that transition into sharp, full-quality images once fully loaded, enhancing the website's performance.
-- Hampers are elegantly presented in a responsive grid layout, ensuring optimal viewing experience across various devices and screen sizes.
-- Visitors can view hampers in detail by clicking on small images, triggering a full-page modal that provides an immersive viewing experience.
-- The website dynamically adjusts image spacing within columns, ensuring a balanced and visually pleasing product view layout, contributing to an engaging user experience that encourages exploration.
+- The cheese collage about made with https://www.photocollage.com/
+
+
+- The Cheese Shoppe website prominently features high-resolution images of cheese hampers to showcase their quality and presentation, enticing visitors with their visual appeal.
+- Cheese products are elegantly presented in a responsive grid layout, ensuring an optimal viewing experience across various devices and screen sizes.
+-Visitors can view cured meat in detail by clicking on small images, opening the images in a much larger view.
+-The website dynamically adjusts image spacing within columns, ensuring a balanced and visually pleasing product view layout, contributing to an engaging user experience that encourages exploration.
 
 ----
 
 # Features
+## Page Elements
+### All Pages
+#### Navbars (Main and Mobile)
+<div align="center">
+  <img src="assets/READMEimages/main_nav_bar.JPG" alt="Main Nav Bar"><br>
+  <br>
+  <br>
+  <img src="assets/READMEimages/mobile_nav_bar.JPG" alt="Mobile Nav Bar">
+</div><br>
+<br>
+
+- The Navbar is simple, providing only four options containing All Products, Cheese, Cured Meat and Special Offers to maintain the minimalist style.
+- The Logo and Heading remains to the left, they are removed to suit smaller devices to leave more space for my dropdown nav.
+- On smaller devices, the menu becomes collapsible.
+- The mobile nav button has been placed to the left for ease of use with one hand.
+- Logged-in users see their account logo and shopping bag balance to the right for quick access to personal and shopping information
 
 
 
@@ -286,12 +308,138 @@ I used coolors.co to help created my colour pallette for the The Cheese Shoppe
 
 
 
-## Visual Design
 
 
 
 
-skip middle and do end first
+
+
+
+
+
+
+
+
+#### Toasts
+<br>
+<div align="center">
+  <img src="assets/READMEimages/toasts.JPG" alt="Toasts">
+</div><br>
+<br>
+
+- Bootstrap toasts were incorporated to deliver customers with notifications regarding their interactions on the website.
+
+#### Footer
+<div align="center">
+  <img src="assets/READMEimages/Footer.png" alt="Footer"><br>
+  <br>
+  <br>
+  <img src="assets/READMEimages/Footer_Small.JPG" alt="Mobile Footer">
+</div>
+
+- Located at the bottom of every page, it includes a cheese image, social media links, three headings containing Make your own hampers with useful links, then the most popular category heading contains links to Wexford Treasures best, and finally it contains Contact Info as the last heading.
+- The headings all stack for responsiveness.
+- Social media logos brings users to Wexford Treasure on social media for the latest product launches, promotions, and behind-the-scenes glimpses
+
+
+
+
+### Home Page
+
+<div align="center">
+  <img src="media/readme_home_page.png" alt="Medium Footer">
+</div>
+
+- This is the home page, where every detail is crafted with my experience in mind. 
+- As soon as you land on the  website, you're greeted with a captivating background image carefully selected to engage users senses and set the tone for their journey. 
+- The streamlined navbar ensures effortless navigation, allowing users to explore hampers with ease.
+-  At the heart of the page, the prominent heading stands proudly next to the wexford treasure hamper logo, inviting users to discover the essence of the brand. 
+- For users ready to embark on their shopping adventure, a centrally located "Shop Now" button beckons, ready to whisk them away to explore the exquisite range of products.
+
+
+### Sign Up Page
+<div align="center">
+  <img src="./assets/testing/userstories/sign_up_readme.png" alt="Sign Up">
+</div>
+
+### Sign In Page
+<div align="center">
+  <img src="./assets/testing/userstories/sign_in_readme.png" alt="Sign In">
+</div>
+
+
+#### Product Page
+#### Hampers Page
+#### Gifts Page
+#### Special Offers Page
+<div align="center">
+  <img src="media/readme_products.png" alt="Products">
+</div>
+
+- The product, hamper, gift, and special offer pages on our website boast a cohesive and user-friendly design.
+- Each page showcases our diverse range of offerings in a consistent layout featuring four columns, ensuring an organized and visually appealing display.
+- Designed to be responsive, the layout seamlessly adjusts to suit all devices, from desktops to mobile phones, providing an optimal viewing experience for every user.
+
+### Product Detail Page
+<div align="center">
+  <img src="./assets/testing/userstories/product_detail_page_readme.png" alt="Product Detail">
+</div>
+
+### Review
+<div align="center">
+  <img src="media/readme_review.png" alt="Review">
+</div>
+
+- Authenticated users can utilize the reviews section to submit feedback for a product.
+
+
+### Product Management Page
+<div align="center">
+  <img src="media/readme_product_manage.png" alt="Product Management">
+</div>
+
+### Shopping Bag Page
+<div align="center">
+  <img src="./assets/testing/userstories/shopping_bag_readme.png" alt="Shopping Bag">
+</div>
+
+### Checkout Page
+<div align="center">
+  <img src="/assets/testing/userstories/checkout_readme.png" alt="Checkout">
+</div>
+
+### Checkout Success
+<div align="center">
+  <img src="./assets/testing/userstories/checkout_success_readme.png" alt="Checkout Success">
+</div>
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -302,20 +450,51 @@ User data is securely managed within a relational database. The core framework h
 
 - UserLogInEntry: Each row represents an entry recording the login activity of users on the website.
 - Permission: Each row denotes a specific permission granted to users, dictating their access level within the system.
-- Product Category: Each row categorizes products, providing organization and navigation for users browsing the shop.
+- Product Category: Each row categorizes products, providing organisation and navigation for users browsing the shop.
 - Product Wishlist: Each row represents a product that a user has added to their wishlist for future consideration or purchase.- User Wallet: Each row stores information about the wallet or virtual currency balance associated with a user's account.
 - Product Review: Each row captures a user's review or feedback on a purchased product, aiding other users in their decision-making process.
 - Email Address: Each row stores the email addresses associated with user accounts for communication and identification purposes.Place Order: Each row signifies an order that has been initiated by a user, awaiting confirmation and fulfillment.
 - Checkout: Each row records the successful completion of an order transaction, indicating that payment has been processed and products are ready for shipment.
 
-<div align="center">
-  <img src="media/.png">
-</div>
+
 
 
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Additional Features
+
+
+
+### Email
+- Mailchimp is functional on every page through the newsletter form.
+
+
+## Future Ideas
+### Basic
+- Another section above the newsletter such as testimonials.
+- An upgrade on the database, some styling added
+
+
+### Content 
+- A wider range of products and images.
+- Blog posts on the website for making your own hampers.
+
+----
 
 
 
@@ -350,8 +529,6 @@ User data is securely managed within a relational database. The core framework h
     * Used for basic styles and outline.
 
 ## Libraries
-- [JQuery](https://jquery.com/)
-    * Animations and click functions.
 - [Google Fonts](https://fonts.google.com)
     * Font Styles.
 - [Fontawesome](https://fontawesome.com/)
@@ -376,8 +553,56 @@ User data is securely managed within a relational database. The core framework h
 
 ----
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Testing
 Testing documentation can be found [here.](TESTING.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Search Engine Optimization SEO and Marketing
@@ -391,21 +616,28 @@ Testing documentation can be found [here.](TESTING.md)
 ### Marketing
 - A newsletter section is featured across the site, enriching user engagement and elevating the store's profile through compelling content and effective SEO practices.
 
-- Facebook Page
+- Facebook Page<br>
+<br>
+(https://www.facebook.com/profile.php?id=61560026431789)
+<br>
+<br>
 <div align="center">
-  <img src="./assets/.png" alt="facebook-page">
+  <img src="assets/READMEimages/facebook1.jpg" alt="facebook-page1">
+</div>
+
+<div align="center">
+  <img src="assets/READMEimages/facebook2.jpg" alt="facebook-page2">
+</div>
+
+<div align="center">
+  <img src="assets/READMEimages/facebook3.jpg" alt="facebook-page3">
+</div>
+
+<div align="center">
+  <img src="assets/READMEimages/facebook4.jpg" alt="facebook-page4">
 </div>
 
 
-
-## Bugs
-### Known Bugs
-
-
-### Fixed Bugs
-
-
-----
 
 # Deployment
 ## Local Deployment
@@ -465,10 +697,11 @@ navigate to [https://github.com/chancandan/the_cheese_shoppe](https://github.com
 
 ## Credits and Contact
 ### Content
-Nearly all text content was generated by the AI, GPT-4. Especially for product names as I had some many. I also generated random skus using chat-gpt. It certainly helps and found it great
-at explaining certain terms but it can be very undependable in certain circumstances and I always double checked any text I generated using it.
-Most of my Images were screenshots of cheese items across sites such as (https://.ie/) (https://.ie/) and then I also used Canva.
+Nearly all text content was generated by the AI, GPT-4. Especially for product descriptions.
+Most of my Images were screenshots of cheese items across sites such as (https://www.pexels.com) and then I also used Canva.
 I used screenshots but then always made sure to change to title and description of products and made up random prices.
-I felt I had to use hamper images off certain websites for a consistent look for my images as Canva didnt have enough category hamper images.
+
 
 ### Acknowledgements
+
+The tutors are code institue, in particular Thomas and also Roo, thanky uo guys so much for your help.
