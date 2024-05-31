@@ -329,7 +329,7 @@ I used coolors.co to help created my colour pallette for the The Cheese Shoppe
 ### Home Page
 
 <div align="center">
-  <img src="assets/READMEimages.png" alt="Home Page">
+  <img src="assets/READMEimages/Home.png" alt="Home Page">
 </div>
 
 - This is the home page, where every detail is crafted with my experience in mind. 
@@ -341,38 +341,46 @@ I used coolors.co to help created my colour pallette for the The Cheese Shoppe
 
 ### Sign Up Page
 <div align="center">
-  <img src="./assets/testing/userstories/sign_up_readme.png" alt="Sign Up">
+  <img src="assets/READMEimages/Register.png" alt="Sign Up">
 </div>
 
 ### Sign In Page
 <div align="center">
-  <img src="./assets/testing/userstories/sign_in_readme.png" alt="Sign In">
+  <img src="assets/READMEimages/Sign_In.png" alt="Sign In">
 </div>
 
+### Sign Out Page
+<div align="center">
+  <img src="assets/READMEimages/Sign_Out.png" alt="Sign Out">
+</div>
 
-#### Product Page
+#### Products Page
 #### Cheese
 #### Cured Meat
 #### Special Offers Page
 <div align="center">
-  <img src="media/readme_products.png" alt="Products">
+  <img src="assets/READMEimages/All cheese.png" alt="All Cheese">
 </div>
 
-- The product, hamper, gift, and special offer pages on our website boast a cohesive and user-friendly design.
+<div align="center">
+  <img src="assets/READMEimages/All cured meat.png" alt="All Cured Meat">
+</div>
+
+- The product, cheese, cured meat, and special offer pages on our website boast a cohesive and user-friendly design.
 - Each page showcases our diverse range of offerings in a consistent layout featuring four columns, ensuring an organized and visually appealing display.
 - Designed to be responsive, the layout seamlessly adjusts to suit all devices, from desktops to mobile phones, providing an optimal viewing experience for every user.
 
 ### Product Detail Page
 <div align="center">
-  <img src="./assets/testing/userstories/product_detail_page_readme.png" alt="Product Detail">
+  <img src="assets/READMEimages/product_detail_page.JPG" alt="Product Detail Page">
 </div>
 
 ### Review
 <div align="center">
-  <img src="media/readme_review.png" alt="Review">
+  <img src="assets/READMEimages/customer_reviews.JPG" alt="Customer Reviews">
 </div>
 
-- Authenticated users can utilize the reviews section to submit feedback for a product.
+- Authenticated users can utilise the reviews section to submit feedback for a product.
 
 
 ### Product Management Page
