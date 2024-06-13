@@ -5,7 +5,7 @@
   <img src="assets/READMEimages/landingpage.JPG" alt="Home Page">
 </div>
 
-[The Cheese Shoppe](https://the-cheese-shoppe.herokuapp.com/) is an online store specialising in a wide variety of cheeses, cured meats, and gourmet products. Designed as a comprehensive e-commerce platform, it seamlessly integrates Stripe for secure and effortless payment processing. The website features a cohesive and captivating theme, showcasing meticulous attention to detail and highlighting the extensive skills developed throughout the project.
+[The Cheese Shoppe](https://the-cheese-shoppe-bcc078838d50.herokuapp.com/) is an online store specialising in a wide variety of cheeses, cured meats, and gourmet products. Designed as a comprehensive e-commerce platform, it seamlessly integrates Stripe for secure and effortless payment processing. The website features a cohesive and captivating theme, showcasing meticulous attention to detail and highlighting the extensive skills developed throughout the project.
 
 ## Table of Contents
 1. <details open>
