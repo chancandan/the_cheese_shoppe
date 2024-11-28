@@ -1,9 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth import login, authenticate
+from django.core.mail import send_mail
+from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
-from .forms import UserProfileForm
-
+from .forms import UserProfileForm, SignUpForm  # Import the user profile form and the sign-up form
 from checkout.models import Order
 
 
@@ -48,3 +50,34 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def user_registration_view(request):
+    """ Handle user registration. """
+    if request.method == 'POST':
+        form = SignUpForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            user.refresh_from_db()
+            user.save()
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=user.username, password=raw_password)
+            login(request, user)
+
+            # Send confirmation email
+            subject = 'Welcome to The Cheese Shoppe!'
+            message = (
+                f'Hello {user.username},\n\n'
+                f'Thank you for registering at The Cheese Shoppe! Enjoy shopping with us.\n\n'
+                f'Best Regards,\nThe Cheese Shoppe Team'
+            )
+            from_email = settings.DEFAULT_FROM_EMAIL
+            recipient_list = [user.email]
+
+            send_mail(subject, message, from_email, recipient_list, fail_silently=False)
+
+            messages.success(request, 'Registration successful. A confirmation email has been sent to your email address.')
+            return redirect('home')  # Redirect to home page after registration
+    else:
+        form = SignUpForm()
+    return render(request, 'registration/signup.html', {'form': form})
