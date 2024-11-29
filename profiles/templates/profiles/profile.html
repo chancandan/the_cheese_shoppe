@@ -73,48 +73,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Favorites Section -->
-        <div class="row mt-5">
-            <div class="col-12">
-                <hr>
-                <h2 class="logo-font mb-4">My Favorites</h2>
-                <hr>
-                <div class="favorites-list">
-                    {% if user.favorites.all %}
-                        <div class="table-responsive">
-                            <table class="table table-sm table-borderless">
-                                <thead>
-                                    <tr>
-                                        <th>Product</th>
-                                        <th>Category</th>
-                                        <th>Price</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {% for favorite in user.favorites.all %}
-                                        <tr>
-                                            <td>{{ favorite.product.name }}</td>
-                                            <td>{{ favorite.product.category.friendly_name }}</td>
-                                            <td>${{ favorite.product.price }}</td>
-                                            <td>
-                                                <a href="{% url 'remove_from_favorites' favorite.product.id %}" class="btn btn-outline-danger btn-sm">
-                                                    Remove from Favorites
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    {% endfor %}
-                                </tbody>
-                            </table>
-                        </div>
-                    {% else %}
-                        <p class="text-muted">You have no favorite products yet.</p>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-    </div>
 {% endblock %}
 
 {% block postloadjs %}

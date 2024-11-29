@@ -1,6 +1,5 @@
 from django.contrib.auth.models import User
 from django.db import models
-from django.utils import timezone
 
 
 class Category(models.Model):
@@ -45,17 +44,6 @@ class Product(models.Model):
             return reviews_total / self.reviews.count()
 
         return 0
-
-
-class Favorite(models.Model):
-    user = models.ForeignKey(User, related_name='favorites', on_delete=models.CASCADE)
-    product = models.ForeignKey('Product', related_name='favorites', on_delete=models.CASCADE)
-    added_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return f'{self.user.username} - {self.product.name}'
-
-
 
 
 # Reviews Model
