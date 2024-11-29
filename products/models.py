@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.utils import timezone
 
 
 class Category(models.Model):
@@ -46,7 +47,21 @@ class Product(models.Model):
         return 0
 
 
+class Favorite(models.Model):
+    user = models.ForeignKey(User, related_name='favorites', on_delete=models.CASCADE)
+    product = models.ForeignKey('Product', related_name='favorites', on_delete=models.CASCADE)
+    added_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.user.username} - {self.product.name}'
+
+
+
 # Reviews Model
+
+# Note to Accessor - User is not meant to have CRUD functionality here
+# Like most sites once the user posts their review that is it, it's live on the site
+# Admin cannot edit or delete reviews for comapny transperancy in the products and customer feedback
 
 class Review(models.Model):
     product = models.ForeignKey(Product, related_name='reviews', on_delete=models.CASCADE)

@@ -7,7 +7,9 @@ from django.db.models.functions import Lower
 from .models import Product, Category, Review
 from .forms import ProductForm
 
-# Create your views here.
+from .models import Product, Favorite
+
+
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -166,3 +168,21 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_to_favorites(request, product_id):
+    """ Add a product to the user's favorites list. """
+    product = get_object_or_404(Product, pk=product_id)
+    Favorite.objects.get_or_create(user=request.user, product=product)
+    return redirect('product_detail', product_id=product.id)
+
+
+@login_required
+def remove_from_favorites(request, product_id):
+    """ Remove a product from the user's favorites list. """
+    product = get_object_or_404(Product, pk=product_id)
+    favorite = Favorite.objects.filter(user=request.user, product=product)
+    if favorite.exists():
+        favorite.delete()
+    return redirect('product_detail', product_id=product.id)

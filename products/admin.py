@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Product, Category
+from .models import Favorite
 
-# Register your models here.
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
@@ -23,3 +23,9 @@ class CategoryAdmin(admin.ModelAdmin):
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
+
+class FavoriteAdmin(admin.ModelAdmin):
+    list_display = ('user', 'product', 'added_at')
+    ordering = ('-added_at',)
+
+admin.site.register(Favorite, FavoriteAdmin)
