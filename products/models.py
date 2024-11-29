@@ -1,6 +1,5 @@
 from django.contrib.auth.models import User
 from django.db import models
-from django.utils import timezone
 
 
 class Category(models.Model):
@@ -55,10 +54,3 @@ class Review(models.Model):
     content = models.TextField()
     created_by = models.ForeignKey(User, related_name='reviews', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
-    def save(self, *args, **kwargs):
-        # Ensure that `updated_at` changes every time a review is updated
-        if self.pk:
-            self.updated_at = timezone.now()
-        super().save(*args, **kwargs)
