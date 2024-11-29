@@ -242,12 +242,5 @@ else:
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
-    #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    #EMAIL_HOST = 'smtp.mailersend.net'
-    #EMAIL_PORT = 587
-    #EMAIL_USE_TLS = True
-    #EMAIL_HOST_USER = os.getenv('MS_dYA06N@trial-0p7kx4xjy8vl9yjr.mlsender.net')
-    #EMAIL_HOST_PASSWORD = os.getenv('F5X58iISZA1PDWV6')
-    #DEFAULT_FROM_EMAIL = 'noreply@ythecheeseshoppe.com'
 
 
