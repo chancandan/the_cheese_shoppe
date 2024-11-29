@@ -57,6 +57,7 @@ class Favorite(models.Model):
 
 
 
+
 # Reviews Model
 
 # Note to Accessor - User is not meant to have CRUD functionality here

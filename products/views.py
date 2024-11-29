@@ -172,17 +172,21 @@ def delete_product(request, product_id):
 
 @login_required
 def add_to_favorites(request, product_id):
-    """ Add a product to the user's favorites list. """
     product = get_object_or_404(Product, pk=product_id)
-    Favorite.objects.get_or_create(user=request.user, product=product)
-    return redirect('product_detail', product_id=product.id)
+    user = request.user
 
+    # Handle authenticated user
+    if user.is_authenticated:
+        # Get or create a favorite object to prevent duplicate entries
+        favorite, created = Favorite.objects.get_or_create(user=user, product=product)
+        if created:
+            # Favorite was added successfully
+            print("Favorite successfully added.")
+        else:
+            # Favorite already exists
+            print("Favorite already exists.")
+    else:
+        # Redirect the user to login if not authenticated
+        return redirect('account_login')
 
-@login_required
-def remove_from_favorites(request, product_id):
-    """ Remove a product from the user's favorites list. """
-    product = get_object_or_404(Product, pk=product_id)
-    favorite = Favorite.objects.filter(user=request.user, product=product)
-    if favorite.exists():
-        favorite.delete()
-    return redirect('product_detail', product_id=product.id)
+    return redirect(request.POST.get('redirect_url', 'product_detail'), product_id=product.id)
