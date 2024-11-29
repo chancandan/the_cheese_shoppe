@@ -62,9 +62,3 @@ class Review(models.Model):
         if self.pk:
             self.updated_at = timezone.now()
         super().save(*args, **kwargs)
-
-class ReviewAdmin(admin.ModelAdmin):
-    list_display = ('product', 'rating', 'created_by', 'created_at', 'updated_at')
-    ordering = ('-created_at',)
-
-admin.site.register(Review, ReviewAdmin)
